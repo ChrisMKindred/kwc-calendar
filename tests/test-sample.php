@@ -21,7 +21,7 @@ class SampleTest extends WP_UnitTestCase {
 	 */
 	public function test_plugin_slug() {
 		// Replace this with some actual testing code.
-		$plugin_slug = $this->plugin->get_plugin_slug();
+		$plugin_slug = kwc_calendar::get_plugin_slug();
 		$this->assertEquals( 'kwc-calendar', $plugin_slug );
 	}
 }
