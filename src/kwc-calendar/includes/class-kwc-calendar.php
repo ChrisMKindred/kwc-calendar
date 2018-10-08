@@ -67,8 +67,8 @@ class kwc_calendar {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'kwc_calendar_VERSION' ) ) {
-			$this->version = kwc_calendar_VERSION;
+		if ( defined( 'KWC_CALENDAR_VERSION' ) ) {
+			$this->version = KWC_CALENDAR_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}

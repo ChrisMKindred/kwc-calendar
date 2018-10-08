@@ -10,7 +10,7 @@ $cleanup = true;
 $build_cfg_dir = getcwd() . '/build';
 $root_dir = dirname( $build_cfg_dir );
 $src_dir = "$root_dir/src/$PLUGIN_SLUG";
-$main_plugin_file = "$src_dir/kwcusgs.php";
+$main_plugin_file = "$src_dir/kwc-calendar.php";
 $tmp_dir = "$root_dir/wp-build";
 $dest_dir = "$tmp_dir/$PLUGIN_SLUG";
 

@@ -13,11 +13,10 @@ class SampleTest extends WP_UnitTestCase {
 
 	public function setUp(){
 		parent::setUp();
-		$this->plugin = kwc_calendar::get_instance();
+		$this->plugin = kwc_calendar;
 	}
 	/**
 	 * Tests for plugin slug.
-	 * @covers kwc_calendar::get_instance
 	 * @covers kwc_calendar::get_plugin_slug
 	 */
 	public function test_plugin_slug() {
