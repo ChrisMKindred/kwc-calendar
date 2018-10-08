@@ -19,8 +19,8 @@ class AdminTests extends WP_UnitTestCase {
 	/**
 	 * Undocumented function
 	 *
-	 * @covers Kwc_Usgs_Admin::get_instance
-	 * @covers Kwc_Usgs_Admin::enqueue_admin_styles
+	 * @covers kwc_calendar_Admin::get_instance
+	 * @covers kwc_calendar_Admin::enqueue_admin_styles
 	 */
 	public function test_for_admin() {
 		$this->admin = kwc_calendar_Admin::get_instance();
