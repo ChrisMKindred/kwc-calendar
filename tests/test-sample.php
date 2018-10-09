@@ -14,13 +14,14 @@ class SampleTest extends WP_UnitTestCase {
 	public function setUp(){
 		parent::setUp();
 	}
+
 	/**
 	 * Tests for plugin slug.
-	 * @covers kwc_calendar::get_plugin_slug
+	 * @covers kwc_calendar::get_kwc_calendar
 	 */
 	public function test_plugin_slug() {
 		// Replace this with some actual testing code.
-		$plugin_slug = kwc_calendar::get_plugin_slug();
+		$plugin_slug = kwc_calendar::get_kwc_calendar();
 		$this->assertEquals( 'kwc-calendar', $plugin_slug );
 	}
 }
