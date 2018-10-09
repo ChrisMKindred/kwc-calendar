@@ -34,8 +34,7 @@ class SampleTest extends WP_UnitTestCase {
 	 */
 	public function test_enqueue_scripts() {
 		// Replace this with some actual testing code.
-		$plugin_admin = new kwc_calendar_Admin( $this->plugin->get_kwc_calendar(), $this->plugin->get_version() );
-		$this->assertGreaterThan(0, has_action( 'enqueue_scripts', 'admin_enqueue_scripts' ) );
+		$this->assertGreaterThan(0, has_action( 'enqueue_scripts', array( $this->plugin->get_kwc_calendar(), 'admin_enqueue_scripts' ) ) );
 	}
 	
 }
