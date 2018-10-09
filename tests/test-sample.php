@@ -34,15 +34,9 @@ class SampleTest extends WP_UnitTestCase {
 	 */
 	public function test_enqueue_scripts() {
 		// Replace this with some actual testing code.
-		$this->assertGreaterThan(0, has_action( 'enqueue_scripts', array( $this->plugin->get_kwc_calendar(), 'enqueue_admin_scripts' ) ) );
+		$plugin_admin = new kwc_calendar_Admin( $this->plugin->get_kwc_calendar(), $this->plugin->get_version() );
+		var_dump( $plugin_admin );
+		$this->assertGreaterThan(0, has_action( 'enqueue_scripts', array( $plugin_admin, 'admin_enqueue_scripts' ) ) );
 	}
 	
-	/**
-	 * Tests for plugin slug.
-	 * @covers kwc_calendar_Admin::enqueue_styles
-	 */
-	public function test_enqueue_styles() {
-		// Replace this with some actual testing code.
-		$this->assertGreaterThan(0, has_action( 'enqueue_styles', array( $this->plugin->get_kwc_calendar(), 'enqueue_admin_styles' ) ) );
-	}
 }
