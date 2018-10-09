@@ -34,6 +34,8 @@ class SampleTest extends WP_UnitTestCase {
 	 */
 	public function test_enqueue_scripts() {
 		// Replace this with some actual testing code.
+		var_dump( array( $this->plugin->get_kwc_calendar(), 'admin_enqueue_scripts' ) );
+		var_dump( has_action( 'enqueue_scripts', array( $this->plugin->get_kwc_calendar(), 'admin_enqueue_scripts' ) ) );
 		$this->assertGreaterThan(0, has_action( 'enqueue_scripts', array( $this->plugin->get_kwc_calendar(), 'admin_enqueue_scripts' ) ) );
 	}
 	
