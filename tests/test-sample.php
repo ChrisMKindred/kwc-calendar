@@ -26,4 +26,24 @@ class SampleTest extends WP_UnitTestCase {
 		$plugin_slug = $this->plugin->get_kwc_calendar();
 		$this->assertEquals( 'kwc-calendar', $plugin_slug );
 	}
+	
+	/**
+	 * Tests for plugin slug.
+	 * @covers kwc_calendar_Admin::__construct
+	 * @covers kwc_calendar_Admin::enqueue_scripts
+	 */
+	public function enqueue_scripts() {
+		// Replace this with some actual testing code.
+		$this->assertGreaterThan(0, has_action( 'enqueue_scripts', array( $this->plugin->get_kwc_calendar(), 'enqueue_admin_scripts' ) ) );
+	}
+	
+	/**
+	 * Tests for plugin slug.
+	 * @covers kwc_calendar_Admin::__construct
+	 * @covers kwc_calendar_Admin::enqueue_styles
+	 */
+	public function enqueue_styles() {
+		// Replace this with some actual testing code.
+		$this->assertGreaterThan(0, has_action( 'enqueue_styles', array( $this->plugin->get_kwc_calendar(), 'enqueue_admin_styles' ) ) );
+	}
 }
