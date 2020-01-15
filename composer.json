@@ -1,0 +1,7 @@
+{
+  "require": {
+    "johngrogg/ics-parser": "^2.1",
+    "nesbot/carbon": "^2.24",
+    "a5hleyrich/wp-background-processing": "^1.0"
+  }
+}
